@@ -37,8 +37,11 @@ body {
   position: absolute;
   width: 900px;
   height: 162px;
-  left: calc(50% - 875px/2 - 0.5px);
-  top: 230px;
+  left: calc(50% - 360px/2 - 0.5px);
+  /*left: 0;
+  right: 0;*/
+  top: 60px;
+  margin: auto;
 
   font-family: Poppins;
   font-style: normal;
@@ -57,7 +60,7 @@ body {
   width: 411px;
   height: 160px;
   /*left: 720px;*/
-  top: 550px;
+  top: 625px;
   left: 0;
   right: 0;
   margin: auto;
@@ -90,8 +93,67 @@ body {
   position: absolute;
   width: 611px;
   height: 89px;
-  left: calc(50% - 611px/2 + 41.5px);
+  left: calc(50% - 651px/2 + 41.5px);
   top: calc(50% - 89px/2 - 180.5px);
 
   background: #9C9999;
+}
+.psButton:hover {
+  background: #2F6B9E;
+}
+
+.psButton h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+  color: black;
+}
+
+.xboxButton {
+  position: absolute;
+  width: 611px;
+  height: 89px;
+  left: calc(50% - 651px/2 + 41.5px);
+  top: calc(50% - 89px/2 - 70.5px);
+
+  background: #9C9999;
+}
+.xboxButton:hover {
+  background: #19D421;
+}
+
+.xboxButton h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+  color: black;
+}
+
+.nintendoButton {
+  position: absolute;
+  width: 611px;
+  height: 89px;
+  left: calc(50% - 651px/2 + 41.5px);
+  top: calc(50% - 89px/2 + 40.5px);
+
+  background: #9C9999;
+}
+.nintendoButton:hover {
+  background: #ff0000;
+}
+
+.nintendoButton h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+  color: black;
 }
