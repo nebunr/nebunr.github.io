@@ -1,6 +1,6 @@
 # CS 420: Game?
 
-## Team:
+## Team (#12):
 - [Benjamin Estela](https://github.com/nebunr)
 - [Miles McDonald](https://github.com/milesmcd16)
 
