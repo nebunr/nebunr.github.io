@@ -83,6 +83,7 @@ body {
   background-color: #2c527a;
   color: white;
 }
+
 /* drop down menu css */
 .dropbtn {
   background-color: #2C527A;
@@ -93,13 +94,11 @@ body {
   height: 89px;
   border: none;
   cursor: pointer;
- border-radius: 8px;
-
-
+  border-radius: 8px;
 }
 
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
   /*position: absolute;*/
   width: 611px;
@@ -126,7 +125,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: center:
+  text-align: center;
 }
 
 .dropdown-content a:hover {background-color: #BEC3CC}
@@ -138,4 +137,3 @@ body {
 .dropdown:hover .dropbtn {
   background-color: #BEC3CC;
 }
-
