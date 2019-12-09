@@ -18,25 +18,9 @@
 <div class = "text">
   <h2>Bored and don’t know what to play? Don’t worry, just click the button below.</h2>
 </div>
-<!-- javascript to pick a random link from the game pages when the game? button is pushed-->
-<script>
-    var sites = [
-        'osrs.html',
-        'ow.html',
-        'botw.html',
-        'game.html',
-        'ds3.html',
-        'portal.html',
 
-    ];
-    //creates function to pick random site and link it
-    function randomSite() {
-        var i = parseInt(Math.random() * sites.length);
-        location.href = sites[i];
-    }
-</script>
 <!-- create link on button and create button class for css-->
-<a href="#" onclick="randomSite();">
+<a href="param.html"> 
   <button class = "gameButton" style ="border:none;">
     <h3>GAME?</h3>
   </button>

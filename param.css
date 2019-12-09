@@ -1,9 +1,11 @@
+/* css code for the parameters page */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #5A9CCE;
 }
 
+/* css for navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #525151;
@@ -27,6 +29,7 @@ body {
   background-color: #A9A7A6;
   color: white;
 }
+/* main text block css */
 .text h2 {
   position: absolute;
   width: 900px;
@@ -46,6 +49,7 @@ body {
   color: #000000
 }
 
+/* game button css */
 .gameButton {
   position: absolute;
   width: 411px;
@@ -76,10 +80,10 @@ body {
 }
 
 .gameButton:hover {
-  background-color: #4CAF50;
+  background-color: #2c527a;
   color: white;
 }
-
+/* drop down menu css */
 .dropbtn {
   background-color: #2C527A;
   color: white;
@@ -125,7 +129,7 @@ body {
   text-align: center:
 }
 
-.dropdown-content a:hover {background-color: #209bcc}
+.dropdown-content a:hover {background-color: #BEC3CC}
 
 .dropdown:hover .dropdown-content {
   display: block;

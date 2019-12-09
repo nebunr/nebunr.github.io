@@ -1,9 +1,10 @@
+/* css for breath of the wild game page */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #BBBBBB;
+  background-color: #5A9CCE;
 }
-
+/* css for navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #525151;
@@ -27,6 +28,7 @@ body {
   background-color: #A9A7A6;
   color: white;
 }
+/* main text block css */
 .text h2 {
   position: absolute;
   width: 729px;
@@ -43,7 +45,7 @@ body {
 
   color: #000000;
 }
-
+/* css for title of page */
 .text h3 {
   position: absolute;
   width: 749px;
@@ -61,6 +63,7 @@ body {
   align-items: center;
   text-align: center;
 }
+/* css for game? button */
 .gameButton {
   position: absolute;
   width: 411px;
@@ -91,7 +94,7 @@ body {
 }
 
 .gameButton:hover {
-  background-color: #ccff66;
+  background-color: #2c527a;
   color: white;
 
 }
@@ -128,7 +131,8 @@ body {
   transition: 0.5s;
 }
 .sharebutton:hover {
-	background-color: yellow;
+	background-color: #121d34;
+  color: white;
 }
 .sharebutton span:after {
   content: '\00bb';
@@ -174,7 +178,9 @@ body {
   transition: 0.5s;
 }
 .infobutton:hover {
-	background-color: yellow;
+	 background-color: #121d34;
+  color: white;
+}
 }
 .infobutton span:after {
   content: '\00bb';
@@ -193,7 +199,7 @@ body {
   opacity: 1;
   right: 0;
 }
-
+/* css for embedded image */
 .image img {
   position: absolute;
   top: 140px;
