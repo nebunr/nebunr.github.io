@@ -1,35 +1,56 @@
+<!-- HTML code for the settings page of the Game? site-->
+<!-- has buttons for each platform to be implemented in the futre-->
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- attach corresponding css -->
 	<link rel="stylesheet" href="settings.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+<!-- add navigation bar to top of window-->
 <div class="topnav">
   <a href="index.html">Home</a>
   <a class="active" href="settings.html">Settings</a>
   <a href="about.html">About</a>
 </div>
-
+<!-- main text block for title of page-->
 <div class = "text">
    <h2>“Game?” Share Settings</h2>
 </div>
-
-<button class = "psButton">
+<!-- button to connect playstation account-->
+<button class = "psButton" style = "border:none;">
   <h2>PlayStation</h2>
 </button>
-
-<button class = "xboxButton">
+<!-- button to connect xbox account-->
+<button class = "xboxButton" style = "border:none;">
     <h2>Xbox</h2>
 </button>
-
-<button class = "nintendoButton">
+<!-- button to connect nintendo account-->
+<button class = "nintendoButton" style = "border:none;">
     <h2>Nintendo</h2>
 </button>
+<!-- button to connect playstation account-->
+<!-- javascript to pick a random link from the game pages when the game? button is pushed-->
+<script>
+    var sites = [
+        'osrs.html',
+        'ow.html',
+        'botw.html',
+        'game.html',
+        'ds3.html',
+        'portal.html',
 
-<a href="param.html">
-    <button class = "gameButton">
+    ];
+    //creates function to pick random site and link it
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+<!-- create link on button and create button class for css-->
+<a href="#" onclick="randomSite();">
+    <button class = "gameButton" style = "border:none;">
       <h3>GAME?</h3>
     </button>
 </a>

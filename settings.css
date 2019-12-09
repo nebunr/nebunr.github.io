@@ -157,3 +157,13 @@ body {
   text-align: left;
   color: black;
 }
+
+.xboxButton{
+  border-radius: 8px;
+}
+.psButton{
+  border-radius: 8px;
+}
+.nintendoButton{
+  border-radius: 8px;
+}
