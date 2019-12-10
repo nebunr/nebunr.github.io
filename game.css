@@ -35,7 +35,7 @@ body {
   height: 342px;
   /*left: 955px;*/
   top: 200px;
-  margin-left: 900px;
+  margin-left: 768px;
   margin-right: 250px;
   font-family: Poppins;
   font-style: normal;
@@ -107,7 +107,7 @@ body {
   position: absolute;
   width: 411px;
   height: 70px;
-  left: 1060px;
+  left: 940px;
 
   top: 400px;
   border: none;
@@ -155,7 +155,7 @@ body {
   position: absolute;
   width: 411px;
   height: 70px;
-  left: 1060px;
+  left: 940px;
   top: 500px;
   border: none;
   background: #AEA3A3;
