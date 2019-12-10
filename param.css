@@ -35,7 +35,8 @@ body {
   width: 900px;
   height: 162px;
   left: calc(50% - 875px/2 - 0.5px);
-  top: 230px;
+  top: 20px;
+  margin: 0;
 
   font-family: Poppins;
   font-style: normal;
@@ -46,7 +47,9 @@ body {
   align-items: center;
   text-align: center;
 
-  color: #000000
+  justify-content: center;
+
+  color: #000000;
 }
 
 /* game button css */
