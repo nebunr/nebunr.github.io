@@ -52,7 +52,7 @@ body {
   height: 85px;
   /*left: 950px;*/
   top: 70px;
-  margin-left: 900px;
+  margin-left: 768px;
   margin-right: 250px;
   font-family: Poppins;
   font-style: normal;
@@ -179,7 +179,7 @@ body {
 	 background-color: #121d34;
   color: white;
 }
-}
+
 .infobutton span:after {
   content: '\00bb';
   position: absolute;
