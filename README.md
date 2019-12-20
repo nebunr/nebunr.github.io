@@ -1,14 +1,3 @@
-# CS 420: Game?
+# nebunr.github.io
 
-## Team (#12):
-- [Benjamin Estela](https://github.com/nebunr)
-- [Miles McDonald](https://github.com/milesmcd16)
-
-## Project Description
-Game? is the final project for [Human Computer Interaction](https://www.cse.unr.edu/~dascalus/hci2019.html).
-
-## Usage Instructions
-To run Game?, you can use the [website](https://nebunr.github.io) or use the following bash command to open Game? in Firefox to run locally:
-```bash
-firefox index.html
-```
+I am, [Benjamin Estela](https://github.com/nebunr), a computer science senior at the University of Nevada, Reno. The above GitHub Page is intended to host my projects, resume, and more.
