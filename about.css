@@ -1,5 +1,5 @@
 /*                            */
-/*CSS code for the about page*/
+/*CSS code for the about page */
 /*                            */
 body {
   margin: 0;
@@ -55,38 +55,4 @@ body {
   text-align: center;
 
   color: #000000
-}
-/* game? button css */
-.gameButton {
-  position: absolute;
-  width: 411px;
-  height: 160px;
-  /*left: 720px;*/
-  top: 625px;
-  left: 0;
-  right: 0;
-  margin: auto;
-
-  background: #7B7A7A;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-}
-
-.gameButton h3 {
-	left: calc(50% - 300px/2);
-  top: 464px;
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 15px;
-  text-align: center;
-
-  color: black;
-}
-
-.gameButton:hover {
-  background-color: #2c527a;
-  color: white;
 }
