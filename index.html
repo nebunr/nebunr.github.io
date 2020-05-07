@@ -28,8 +28,8 @@
     
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url("gitpfp.png");
-        min-height: 100%;
+        background-image: url(""); /*white space*/
+        min-height: 95%;
     }
     
     /* Second image (Portfolio) */
@@ -65,7 +65,7 @@
             </a>
             <a href="#home" class="w3-bar-item w3-button">HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
             <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
             <i class="fa fa-search"></i>
@@ -75,7 +75,7 @@
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
             <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
             <a href="#" class="w3-bar-item w3-button">SEARCH</a>
         </div>
@@ -92,13 +92,13 @@
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">Benjamin Estela</h3>
         <p class="w3-center">Software Engineer</p>
-        <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
         qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
             <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-            <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            <img src="gitpfp.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
             </div>
         
             <!-- Hide this text on small devices -->
@@ -156,40 +156,41 @@
         
         <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
         <div class="w3-row-padding w3-center">
-            <div class="w3-col m3">
-            <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Senior Projects">
+            <div class="w3-col m3">An American AVK Automoation - Senior Projects
+            <a href="https://sinouye.github.io/AnAmericanAVKAutomaton_Website/"><img src="http://www.americanavk.com/images/series279c.jpg" style="width:100%" class="w3-hover-opacity" alt="Senior Projects"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Computer Graphics">
+            <div class="w3-col m3">Apesphere - Computer Graphics
+            <a href="https://github.com/nebunr/cs480Estela/tree/master/PA11"><img src="/w3images/p2.jpg" style="width:100%" class="w3-hover-opacity" alt="Computer Graphics"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CampusTV">
+            <div class="w3-col m3">CampusTV
+            <a href="https://github.com/nebunr/cs480Estela/tree/master/PA11"><img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CampusTV"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Virtual Reality">
+            <div class="w3-col m3">Vini Rolf - Virtual Reality
+            <a href="https://www.youtube.com/watch?v=4KBmcYHofHY"><img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Vini Rolf"></a>
             </div>
         </div>
         
         <div class="w3-row-padding w3-center w3-section">
-            <div class="w3-col m3">
-            <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Game Engine Architecture">
+            <div class="w3-col m3">Miner Mike - Game Engine Architecture
+            <a href="https://github.com/sinouye/MinerMike"><img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Game Engine Architecture"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Networks">
+            <div class="w3-col m3">RIP Implementation in C++ - Networks
+            <a href="https://github.com/nebunr/CPE400"><img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Networks"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Computer Interaction">
+            <div class="w3-col m3">Game? - Human Computer Interaction
+            <a href="https://github.com/nebunr/CS420Project"><img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Computer Interaction"></a>
             </div>
         
-            <div class="w3-col m3">
-            <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Other">
+            <div class="w3-col m3">Database Management Systems
+            <a href="https://github.com/nebunr/csDatabases"><img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Database Management Systems"></a>
             </div>
-            <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+            <br>
+            <a href="https://github.com/nebunr/"><button class="w3-button w3-padding-large w3-light-grey" style="display: block; margin-top:64px; margin-left: auto; margin-right: auto;">GitHub</button></a>
         </div>
     </div>
     
