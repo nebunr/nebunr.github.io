@@ -1,0 +1,143 @@
+<!--HTML File for Mouse Sensitivity Calculator-->
+<html>
+<title>Mouse Sensitivity Calculator</title>
+<meta charset="UTF-8">
+<head>
+    <!--JavaScript Functions-->
+    <script>
+        var input_game = document.getElementById("input_game").value;
+        var output_game = document.getElementById("output_game").value;
+        function changeGame(val)
+        {
+            input_game = document.getElementById("input_game").value;
+            output_game = document.getElementById("output_game").value;
+        }
+        function convert()
+        {
+            let sens = document.getElementById("sens").value;
+            let old_dpi = document.getElementById("old_dpi").value;
+            let new_dpi = document.getElementById("new_dpi").value;
+            let result = 0;
+            //Convert by Game
+            if(input_game == output_game)
+            {
+                result = sens;
+            }
+            else if(output_game == "source")
+            {
+                result = sens * convert_to_source()
+            }
+            else if(output_game == "overwatch")
+            {
+                result = sens * convert_to_overwatch()
+            }
+            else if(output_game == "valorant")
+            {
+                result = sens * convert_to_valorant()
+            }
+            else
+            {
+                result = -1;
+            }
+            //Calculate Result with DPI
+            result *= (old_dpi / new_dpi)
+            //Round to three decimal places
+            result = Math.round(result * 1000)/1000
+            //Return Result
+            document.getElementById("result").value = result;
+        }
+        function convert_to_source()
+        {
+            if(input_game == "overwatch")
+            {
+                return .3
+            }
+            else if(input_game == "valorant")
+            {
+                return 3.1818
+            }
+            else
+            {
+                return -1
+            }
+        }
+        function convert_to_overwatch()
+        {
+            if(input_game == "source")
+            {
+                return 3.3333
+            }
+            else if(input_game == "valorant")
+            {
+                return 10.61
+            }
+            else
+            {
+                return -1
+            }
+        }
+        function convert_to_valorant()
+        {
+            if(input_game == "source")
+            {
+                return .314
+            }
+            else if(input_game == "overwatch")
+            {
+                return .09429
+            }
+            else
+            {
+                return -1
+            }
+        }
+        function transferDPI()
+        {
+            document.getElementById("new_dpi").value = document.getElementById("old_dpi").value
+        }
+    </script>
+    <!--CSS Styling-->
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Mouse Sensitivity Calculator</h1>
+    <!--Input Game-->
+    <p>Input Game</p>
+    <select id="input_game" name="input_game" onchange="changeGame(this.value)">
+        <option value="source">Source</option>
+        <option value="overwatch">Overwatch</option>
+        <option value="valorant">Valorant</option>
+    </select>
+    <form>
+        <label for="your_sens">Your Sensitivity:</label><br>
+        <input type="number" id="sens" name="sens" value="1" step="0.01" min="0"><br>
+        <label for="your_dpi">Your DPI:</label><br>
+        <input type="number" id="old_dpi" name="old_dpi" value="800" step="50" min="0"><br>
+    </form>
+    <!--Output Game-->
+    <p>Output Game</p>
+    <select id="output_game" name="output_game" onchange="changeGame(this.value)">
+        <option value="source">Source</option>
+        <option value="overwatch">Overwatch</option>
+        <option value="valorant">Valorant</option>
+    </select>
+    <form>
+        <br>
+        <label for="new_dpi">New DPI:</label><br>
+        <tr>
+            <td><input type="number" id="new_dpi" name="new_dpi" value="800" step="50" min="0"></td>
+            <td><input type="button" value="Same DPI" onclick="transferDPI()"/></td> 
+        </tr>
+    </form>
+    <tr>
+        Result:
+        <br>
+        <td><input type="number" id="result"></td>
+        <td><input type="button" value="Convert" onclick="convert()"/></td> 
+    </tr> 
+    <p>Note: Source sensitivity is the same for Apex Legends and all Valve games.</p>
+    <a href="https://github.com/nebunr">My GitHub</a>
+</body>
+</html>
