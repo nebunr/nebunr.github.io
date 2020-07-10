@@ -31,19 +31,19 @@
     
     /* First image (Logo. Full height) */
     .bgimg-1 {
-        background-image: url(""); /*white space*/
+        background-image: url("assets/campus.jpg");
         min-height: 95%;
     }
     
     /* Second image (Projects) */
     .bgimg-2 {
-        background-image: url("assets/gitpfp.png");
+        background-image: url("assets/unrengr.jpg");
         min-height: 400px;
     }
     
     /* Third image (Contact) */
     .bgimg-3 {
-        background-image: url("assets/gitpfp.png");
+        background-image: url("assets/sacramento.jpg");
         min-height: 400px;
     }
     
@@ -63,12 +63,12 @@
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
         <div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunc()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
             </a>
             <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
             <a href="resume.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RESUME</a>
             <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -78,9 +78,9 @@
     
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunc()">ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunc()">PROJECTS</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunc()">CONTACT</a>
             <a href="resume.pdf" class="w3-bar-item w3-button">RESUME</a>
             <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
         </div>
@@ -98,8 +98,8 @@
         <h3 class="w3-center">Benjamin Estela</h3>
         <p class="w3-center">Software Engineer</p>
         <p>
-            I am Benjamin Estela, a recent Computer Science and Engineering Graduate of the University of Nevada, Reno. My programming interests are within Computer Graphics and Human Computer Interaction.
-            During my time at the University of Nevada, I gained great experience with C/C++, Python, and Java. I am currently seeking job opportunities within the San Francisco Bay Area, Sacramento County, and Reno.
+            I am Benjamin Estela, a recent Computer Science and Engineering Graduate of the University of Nevada, Reno. My programming interests include Computer Graphics and Human Computer Interaction.
+            During my time at the University of Nevada, I gained great experience with C/C++, Python, and Java. I am currently seeking job opportunities within California and Nevada.
         </p>
         <div class="w3-row">
             <div class="w3-col m6 w3-center w3-padding-large">
@@ -112,8 +112,8 @@
             <p>
                 During my time at the University of Nevada, I ran the school's largest student club, Nevada Esports, the school's home for gaming on campus. As club president, I ran many <a href="https://www.facebook.com/NevadaeSports/photos/a.1022347131199813/1022353971199129/?type=3&theater">events</a> for 
                 hundreds of students to come out and play video games all night as a community. Alongside it, I was the captain of our Overwatch and StarCraft II collegiate teams where we placed within the 
-                <a href="https://twitter.com/NevadaEsports/status/1199758608738603008">top 10 schools nationally</a>. From Fall 2018 to Spring 2019, I coached the University of California, Davis' Overwatch team as shown on the left. I was also club treasurer of 
-                the UNR Game Developers and a student member of my school's Assocation of Computing Machinery. In my free time outside of programming and gaming, I am a volunteer at my local church 
+                <a href="https://twitter.com/NevadaEsports/status/1199758608738603008">top 10 schools nationally</a> in both titles. From Fall 2018 to Spring 2019, I coached the University of California, Davis' Overwatch team as shown on the left. I was also club treasurer of 
+                the UNR Game Developers and a student member of my school's Assocation of Computing Machinery chapter. In my free time outside of programming and gaming, I am a volunteer at my local church 
                 as a youth leader.
             </p>
             </div>
@@ -129,30 +129,38 @@
         </div>
         <p class="w3-wide"><i class="fa fa-code"></i>HTML/CSS</p>
         <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%"></div>
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:65%"></div>
         </div>
         <p class="w3-wide"><i class="fa fa-code"></i>C#</p>
         <div class="w3-light-grey">
-            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%"></div>
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%"></div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-code"></i>Java</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:55%"></div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-code"></i>JavaScript (Currently Learning!)</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:45%"></div>
         </div>
     </div>
     <!--
     <div class="w3-row w3-center w3-dark-grey w3-padding-16">
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">21</span><br>
-            Years Old?
+            <span class="w3-xlarge">22</span><br>
+            Years Old
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">55+</span><br>
-            Projects Done
+            <span class="w3-xlarge">?</span><br>
+            ?
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">89+</span><br>
-            Happy Clients
+            <span class="w3-xlarge">?</span><br>
+            ?
         </div>
         <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">150+</span><br>
-            Meetings
+            <span class="w3-xlarge">?</span><br>
+            ?
         </div>
     </div>
     -->
@@ -164,7 +172,7 @@
     </div>
     
     <!-- Container (Projects Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <div class="w3-content w3-container w3-padding-64" id="projects">
         <h3 class="w3-center">MY PROJECTS</h3>
         <p class="w3-center"><em>Check out some of my recent work.</em></p><br>
         
@@ -189,11 +197,11 @@
         
         <div class="w3-row-padding w3-center w3-section">
             <div class="w3-col m3">CampusTV - Discord
-            <a href="https://github.com/nebunr/cs480Estela/tree/master/PA11"><img src="assets/campustv.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CampusTV"></a>
+            <a href="https://github.com/nebunr/CampusTV"><img src="assets/campustv.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CampusTV"></a>
             </div>
         
             <div class="w3-col m3">News Stand - Discord
-            <a href="#"><img src="assets/newsstand.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="News Stand"></a>
+            <a href="https://github.com/nebunr/AnnounceBot"><img src="assets/newsstand.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="News Stand"></a>
             </div>
         
             <div class="w3-col m3">Game? - Human Computer Interaction
@@ -217,7 +225,7 @@
         </div>
     </div>
     
-    <!-- Third Parallax Image with Portfolio Text -->
+    <!-- Third Parallax Image with Projects Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
@@ -235,7 +243,7 @@
             </div>
             <div class="w3-col m8 w3-panel">
             <div class="w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Elk Grove, CA<br>
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Sacramento County, CA<br>
                 <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Phone: (702) 274-9345<br>
                 <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>Email: benjaminestela@nevada.unr.edu<br>
             </div>
@@ -280,8 +288,8 @@ function onClick(element) {
 }
 
 // Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
+window.onscroll = function() {scrollFunc()};
+function scrollFunc() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
@@ -291,7 +299,7 @@ function myFunction() {
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
+function toggleFunc() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
