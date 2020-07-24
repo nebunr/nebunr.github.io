@@ -62,7 +62,7 @@
     
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar" id="myNavbar">
+        <div class="w3-bar w3-text-dark-grey" id="myNavbar">
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunc()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
             </a>
@@ -239,7 +239,7 @@
         
         <div class="w3-row w3-padding-32 w3-section">
             <div class="w3-col m4 w3-container">
-            <img src="assets/gitpfp.png" class="w3-image w3-round" style="width:100%">
+            <a href="https://github.com/nebunr"><img src="assets/gitpfp.png" class="w3-image w3-round" style="width:100%"></a>
             </div>
             <div class="w3-col m8 w3-panel">
             <div class="w3-large w3-margin-bottom">
@@ -292,7 +292,7 @@ window.onscroll = function() {scrollFunc()};
 function scrollFunc() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white" + " w3-text-dark-grey";
     } else {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
