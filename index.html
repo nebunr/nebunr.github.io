@@ -13,16 +13,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </head>
-<!--CSS found in .css file-->
-<!--JavaScript found in .js file-->
 
 <!--HTML Body-->
 <body>
-    
-    <!-- Navbar (sit on top) -->
+    <!--Navbar (sit on top)-->
     <div class="w3-top">
-        <div class="w3-bar w3-text-dark-grey" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunc()" title="Toggle Navigation Menu">
+        <div id="myNavbar" class="w3-bar w3-text-dark-grey">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="hamburgerToggle()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
             </a>
             <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
@@ -35,24 +32,24 @@
             </a>
         </div>
     
-        <!-- Navbar on small screens -->
+        <!--Navbar on small screens-->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunc()">ABOUT</a>
-            <a href="#projects" class="w3-bar-item w3-button" onclick="toggleFunc()">PROJECTS</a>
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunc()">CONTACT</a>
-            <a href="resume.pdf" class="w3-bar-item w3-button">RESUME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-th"></i> PROJECTS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="resume.pdf" class="w3-bar-item w3-button w3-text-dark-grey"><i class="fa fa-file"></i> RESUME</a>
             <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
         </div>
     </div>
     
-    <!-- First Parallax Image with Logo Text -->
+    <!--First Parallax Image with Logo Text-->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BENJAMIN<span class="w3-hide-small"> ESTELA</span></span>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BENJAMIN ESTELA</span>
         </div>
     </div>
     
-    <!-- Container (About Section) -->
+    <!--Container (About Section)-->
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center">Benjamin Estela</h3>
         <p class="w3-center">Software Engineer</p>
@@ -66,13 +63,13 @@
             <a href="https://www.davisenterprise.com/sports/game-on-for-uc-davis-overwatch-esports-team/"><img src="assets/benucd.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"></a>
             </div>
         
-            <!-- Hide this text on small devices -->
+            <!--Hide this text on small devices-->
             <div class="w3-col m6 w3-hide-small w3-padding-large">
             <p>
                 During my time at the University of Nevada, I ran the school's largest student club, Nevada Esports, the school's home for gaming on campus. As club president, I ran many <a href="https://www.facebook.com/NevadaeSports/photos/a.1022347131199813/1022353971199129/?type=3&theater">events</a> for 
                 hundreds of students to come out and play video games all night as a community. Alongside it, I was the captain of our Overwatch and StarCraft II collegiate teams where we placed within the 
                 <a href="https://twitter.com/NevadaEsports/status/1199758608738603008">top 10 schools nationally</a> in both titles. From Fall 2018 to Spring 2019, I coached the University of California, Davis' Overwatch team as shown on the left. I was also club treasurer of 
-                the UNR Game Developers and a student member of my school's Assocation of Computing Machinery chapter. In my free time outside of programming and gaming, I am a volunteer at my local church 
+                the UNR Game Developers and a student member of Nevada's Assocation of Computing Machinery chapter. In my free time outside of programming and gaming, I am a volunteer at my local church 
                 as a youth leader.
             </p>
             </div>
@@ -119,19 +116,19 @@
         </div>
     </div>
     -->
-    <!-- Second Parallax Image with Project Text -->
+    <!--Second Parallax Image with Project Text-->
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-black w3-wide">PROJECTS</span>
         </div>
     </div>
     
-    <!-- Container (Projects Section) -->
+    <!--Container (Projects Section)-->
     <div class="w3-content w3-container w3-padding-64" id="projects">
         <h3 class="w3-center">MY PROJECTS</h3>
         <p class="w3-center"><em>Check out some of my recent work.</em></p><br>
         
-        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <!--Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width)-->
         <div class="w3-row-padding w3-center">
             <div class="w3-col m3">American AVK Automoation - Senior Projects
             <a href="https://sinouye.github.io/AnAmericanAVKAutomaton_Website/"><img src="assets/avklogo.png" style="width:100%" class="w3-hover-opacity" alt="Senior Projects"></a>
@@ -163,15 +160,15 @@
             <a href="https://www.cse.unr.edu/~dascalus/hci2019.html"><img src="assets/game.png" style="width:100%; margin-top: 38px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Human Computer Interaction"></a>
             </div>
         
-            <div class="w3-col m3">Nevada Esports
+            <div class="w3-col m3">Nevada Esports - Student Club
             <a href="https://nevadaesports.com"><img src="assets/nve.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nevada Esports"></a>
             </div>
         </div>
-        <a href="https://github.com/nebunr/"><button class="w3-button w3-padding-large w3-light-grey" style="display: block; margin-top:64px; margin-left: auto; margin-right: auto;">GitHub</button></a>
+        <button class="w3-button w3-padding-large w3-light-grey" style="display: block; margin-top:64px; margin-left: auto; margin-right: auto;"><a href="https://github.com/nebunr/nebunr.github.io"> GitHub</a></button>
 
     </div>
     
-    <!-- Modal for full size images on click-->
+    <!--Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
         <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
         <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
@@ -180,14 +177,14 @@
         </div>
     </div>
     
-    <!-- Third Parallax Image with Projects Text -->
+    <!--Third Parallax Image with Projects Text-->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
             <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
         </div>
     </div>
     
-    <!-- Container (Contact Section) -->
+    <!--Container (Contact Section)-->
     <div class="w3-content w3-container w3-padding-64" id="contact">
         <!--<h3 class="w3-center">WHERE I WORK</h3>
         <p class="w3-center"><em>I'd love your feedback!</em></p>-->
@@ -221,7 +218,7 @@
         </div>
     </div>
     
-    <!-- Footer -->
+    <!--Footer-->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity">
         <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
         <div class="w3-xlarge w3-section">
