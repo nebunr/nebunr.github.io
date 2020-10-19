@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-<title>Benjamin Estela</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!--Header-->
+<html lang="en">
 <head>
+    <title>Benjamin Estela</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/gitpfp.png"/>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="index.css">
@@ -22,11 +21,11 @@
             <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="hamburgerToggle()" title="Toggle Navigation Menu">
             <i class="fa fa-bars"></i>
             </a>
-            <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="resume.pdf" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file"></i> RESUME</a>
+            <a href="#home" class="w3-bar-item w3-button" title="Top of Page"><i class="fa fa-home"></i> HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small" title="About Me"><i class="fa fa-user"></i> ABOUT</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-hide-small" title="My Projects"><i class="fa fa-code"></i> PROJECTS</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small" title="Contact Me"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="resume.pdf" class="w3-bar-item w3-button w3-hide-small" title="My Resume"><i class="fa fa-file-alt"></i> RESUME</a>
             <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
             <i class="fa fa-search"></i>-->
             </a>
@@ -35,9 +34,9 @@
         <!--Navbar on small screens-->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
             <a href="#about" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-user"></i> ABOUT</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-th"></i> PROJECTS</a>
+            <a href="#projects" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-code"></i> PROJECTS</a>
             <a href="#contact" class="w3-bar-item w3-button w3-text-dark-grey" onclick="hamburgerToggle()"><i class="fa fa-envelope"></i> CONTACT</a>
-            <a href="resume.pdf" class="w3-bar-item w3-button w3-text-dark-grey"><i class="fa fa-file"></i> RESUME</a>
+            <a href="resume.pdf" class="w3-bar-item w3-button w3-text-dark-grey"><i class="fa fa-file-alt"></i> RESUME</a>
             <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
         </div>
     </div>
@@ -45,7 +44,7 @@
     <!--First Parallax Image with Logo Text-->
     <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BENJAMIN ESTELA</span>
+            <span class="w3-center w3-padding-large w3-white w3-text-black w3-xxlarge w3-wide w3-animate-opacity">BENJAMIN ESTELA</span>
         </div>
     </div>
     
@@ -54,7 +53,7 @@
         <h3 class="w3-center">Benjamin Estela</h3>
         <p class="w3-center">Software Engineer</p>
         <p>
-            I am Benjamin Estela, a recent Computer Science and Engineering Graduate of the University of Nevada, Reno. My programming interests include Computer Graphics and Human Computer Interaction.
+            Hello! I am Benjamin Estela, a recent Computer Science and Engineering Graduate of the University of Nevada, Reno. My programming interests include Computer Graphics and Human Computer Interaction.
             During my time at the University of Nevada, I gained great experience with C/C++, Python, and Java. I am currently seeking job opportunities within California and Nevada.
         </p>
         <div class="w3-row">
@@ -135,7 +134,7 @@
             </div>
         
             <div class="w3-col m3">ApeSphere - Computer Graphics
-            <a href="apesphere/apesphere.html"><img src="assets/opengl.png" style="width:100%" class="w3-hover-opacity" alt="Computer Graphics"></a>
+            <a href="apesphere"><img src="assets/opengl.png" style="width:100%" class="w3-hover-opacity" alt="Computer Graphics"></a>
             </div>
         
             <div class="w3-col m3">Miner Mike - Game Engine Architecture
@@ -164,7 +163,7 @@
             <a href="https://nevadaesports.com"><img src="assets/nve.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nevada Esports"></a>
             </div>
         </div>
-        <button class="w3-button w3-padding-large w3-light-grey" style="display: block; margin-top:64px; margin-left: auto; margin-right: auto;"><a href="https://github.com/nebunr/nebunr.github.io"> GitHub</a></button>
+        <button class="w3-button w3-padding-large w3-light-grey" style="display: block; margin-top:64px; margin-left: auto; margin-right: auto;"><a href="projects.html"> GitHub</a></button>
 
     </div>
     
@@ -220,13 +219,13 @@
     
     <!--Footer-->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity">
-        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Top of Page</a>
         <div class="w3-xlarge w3-section">
             <a href="https://github.com/nebunr/"><i class="fa fa-github w3-hover-opacity"></i></a>
             <a href="https://www.linkedin.com/in/benjaminestela"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
             <a href="mailto:benjaminestela@nevada.unr.edu"><i class="fa fa-envelope w3-hover-opacity"></i></a>
         </div>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="w3.css" target="_blank" class="w3-hover-text-green">w3.css</a> and <a href="https://jquery.com/" title="jQuery" target="_blank" class="w3-hover-text-green">jQuery</a>.</p>
+        <p>This webpage uses <a href="https://www.w3schools.com/" title="w3.css" target="_blank" class="w3-hover-text-green">w3.css</a> and <a href="https://jquery.com/" title="jQuery" target="_blank" class="w3-hover-text-green">jQuery</a>.</p>
         <p>By Benjamin Estela.</p>
     </footer>
 </body>
